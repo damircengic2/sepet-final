@@ -9,8 +9,8 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
+  siteName: 'Amphibians Blog',
+  tagline: 'The latest from our Scuba diving team.',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
@@ -18,31 +18,19 @@ export default {
     id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
-    {
-      name: 'About',
-      link: '/about'
-    },
-    {
-      name: 'Contact',
-      link: '/contact'
-    },
+    
     {
       name: 'Categories',
       link: '/categories'
     },
     {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
+      name: 'Sepet home',
+      link: 'https://sepet.team',
       target: '_blank'
     }
   ],
   hero: {
-    theme: 'dark' // options: mist, light, dark
+    theme: 'mist' // options: mist, light, dark
   },
 
   // Main Layout/Style
@@ -60,13 +48,13 @@ export default {
   // Disqus
   disqus: {
     on: true,
-    loadingStrategy: 'button', // Options: onload, lazy, button
+    loadingStrategy: 'lazy', // Options: onload, lazy, button
     siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
   newsletter: {
-    on: true,
+    on: false,
     heading: 'Subscribe to Our Newsletter',
     btnText: 'Subscribe',
     // Can be the form action on a mail chimp form, a hubspot form,
